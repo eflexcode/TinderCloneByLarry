@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UploadImageActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="20dp">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:onClick="finish"
+            android:src="@drawable/ic_arrow_back_black_24dp2" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Source"
+            android:textSize="23sp"
+            android:textColor="#000"
+            android:paddingStart="50dp"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_below="@id/toolbar"
+        android:onClick="openCamera"
+        android:id="@+id/one">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_camera_alt"
+            android:layout_centerVertical="true"
+            android:background="#BDBBBB"
+            android:padding="15dp"
+            android:id="@+id/cam"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/cam"
+            android:text="Camera"
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_marginStart="15dp"/>
+
+
+        <View
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#A5A4A4"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_below="@id/one"
+        android:onClick="openGallery"
+        android:id="@+id/two">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_gallery"
+            android:layout_centerVertical="true"
+            android:background="#BDBBBB"
+            android:padding="15dp"
+            android:id="@+id/gallery"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/gallery"
+            android:text="Gallery"
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_marginStart="15dp"/>
+
+
+        <View
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#A5A4A4"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".OtherUserDetailsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/profile_pic"
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:scaleType="centerCrop" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_pic"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="-10dp"
+            android:layout_marginTop="-24dp"
+            android:layout_marginEnd="27dp"
+            android:onClick="finish"
+            android:src="@drawable/ic_arrow_downward"
+            app:maxImageSize="40dp" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_pic"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="25dp"
+            android:text=""
+            android:textColor="#000"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_pic"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="25dp"
+            android:layout_toEndOf="@id/username"
+            android:text=""
+            android:textColor="#000"
+            android:textSize="25sp" />
+
+
+        <ImageView
+            android:id="@+id/loc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/username"
+            android:layout_marginTop="6dp"
+            android:paddingStart="10dp"
+            android:src="@drawable/ic_location_on2" />
+
+        <TextView
+            android:id="@+id/city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/username"
+            android:layout_marginTop="6dp"
+            android:layout_toEndOf="@id/loc"
+            android:paddingStart="10dp"
+            android:paddingBottom="5dp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="#0E0E0E"
+            android:textSize="19sp" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/city"
+            android:layout_marginBottom="10dp"
+            android:background="#BAB9B9" />
+
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:layout_below="@id/divider2"
+            android:text=""
+            android:textColor="#0C0C0C"
+            android:textSize="23sp" />
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sing_up_login_background"
+    android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+    tools:context=".LoginSignUpActivity">
+
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/lo"-->
+    <!--            android:layout_width="80dp"-->
+    <!--            android:layout_height="50dp"-->
+    <!--            android:layout_centerHorizontal="true"-->
+    <!--            android:layout_marginTop="150dp"-->
+    <!--            android:src="@drawable/ic_whatshot_black_24dp" />-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:text="tinder"
+        android:id="@+id/lo"
+        android:textColor="#fff"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/by"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:gravity="center"
+        android:text="By clicking Log In, you agree to our Terms.Learn how we process your data in our Privacy Policy and Cookies policy"
+        android:textColor="#fff"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/login_num"
+        android:layout_width="325dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/by"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_background"
+        android:drawableStart="@drawable/ic_email_black_24dp"
+        android:onClick="login"
+        android:padding="10dp"
+        android:shadowColor="#fff"
+        android:text="LOG IN WITH EMAIL AND PASSWORD"
+        android:textColor="#322D2D"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/fb"
+        android:layout_width="325dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/login_num"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_background"
+        android:drawableStart="@drawable/ic_account_circle_black_24dp"
+        android:onClick="fb"
+        android:padding="10dp"
+        android:text="SIGN IN WITH EMAIL AND PASSWORD"
+        android:textColor="#322D2D"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fb"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="Trouble Logging in?"
+        android:textColor="#FBFBFB"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+</RelativeLayout>
